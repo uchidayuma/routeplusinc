@@ -256,6 +256,76 @@ footer {
         transform: translateY(-9px) rotate(-45deg);
     }
 
+    .ceo-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .ceo-image {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+
+    .ceo-achievements ul {
+        text-align: left;
+    }
+
+    .ceo-links {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+    
+    .company-table dl {
+        grid-template-columns: 1fr;
+    }
+    
+    .company-table dt {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}}
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        padding-top: 100px;
+        transition: 0.3s;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        margin: 20px 0;
+        margin-left: 0;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
     .hero-content h1 {
         font-size: 2.25rem;
     }
